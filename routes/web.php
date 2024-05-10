@@ -20,3 +20,6 @@ Route::get('/', function () {
 
 
 Route::get('/trains', [TrainController::class, 'index'])->name('trains.index');
+
+
+Route::get('/trains/{train}', [TrainController::class, 'show'])->name('trains.show');
