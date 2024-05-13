@@ -9,6 +9,7 @@ header,footer{
 }
 main{
     height: calc(100vh - 20vh);
+    overflow-y: auto;
     
 }
 

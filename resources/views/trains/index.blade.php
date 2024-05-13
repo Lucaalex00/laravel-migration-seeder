@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+    <a href="{{ route('home') }}">Home</a>
     <h1>Trains : </h1>
     <div class="container">
         <div class="row row-cols-md-3">
             @forelse ($trains as $train)
-                <div class="col">
+                <div class="col g-3">
                     <a class="text-decoration-none" href="{{ route('trains.show', $train) }}">
                         <div class="card bg-dark text-white border-1 border-dark p-5 justify-content-between">
                             <div class="card_title mt-3">

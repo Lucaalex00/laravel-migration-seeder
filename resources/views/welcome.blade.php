@@ -2,5 +2,5 @@
 
 @section('content')
     <h1>Main</h1>
-    <a href="trains">Train</a>
+    <a href="{{ route('trains.index') }}">Train's List </a>
 @endsection
